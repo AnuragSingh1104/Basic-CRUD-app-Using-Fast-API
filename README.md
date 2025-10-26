@@ -46,20 +46,6 @@ If `requirements.txt` is not present, install core dependencies manually:
 pip install fastapi uvicorn sqlalchemy pydantic
 ```
 
-## 🏃 Running the Application
-
-Start the development server with auto-reload:
-
-```bash
-uvicorn main:app --reload
-```
-
-The API will be available at: `http://127.0.0.1:8000`
-
-**Access Interactive Documentation:**
-- Swagger UI: `http://127.0.0.1:8000/docs`
-- ReDoc: `http://127.0.0.1:8000/redoc`
-
 ## 📁 Project Structure
 
 ```
