@@ -8,7 +8,6 @@ A lightweight RESTful API built with FastAPI that demonstrates fundamental CRUD 
 - **Automatic API Documentation** - Interactive Swagger UI at `/docs` and ReDoc at `/redoc`
 - **CRUD Operations** - Complete Create, Read, Update, Delete functionality
 - **Data Validation** - Built-in request/response validation using Pydantic models
-- **Async Support** - Asynchronous request handling for improved performance
 - **SQLAlchemy Integration** - ORM for database operations (if database is configured)
 - **Type Hints** - Full type annotation for better code quality and IDE support
 
@@ -81,12 +80,11 @@ Basic-CRUD-app-Using-Fast-API/
 
 | Method | Endpoint | Description | Request Body |
 |--------|----------|-------------|--------------|
-| `GET` | `/` | Root endpoint | - |
-| `GET` | `/items` | Retrieve all items | - |
-| `GET` | `/items/{item_id}` | Get specific item by ID | - |
-| `POST` | `/items` | Create a new item | `{"name": "string", "description": "string"}` |
-| `PUT` | `/items/{item_id}` | Update an existing item | `{"name": "string", "description": "string"}` |
-| `DELETE` | `/items/{item_id}` | Delete an item | - |
+| `GET` | `/employees_read` | Retrieve all employees | - |
+| `GET` | `/employees/{employees_id}` | Get specific item by ID | - |
+| `POST` | `/employees` | Create a new item | `{"name": "string", "description": "string"}` |
+| `PUT` | `/employees/{employees_id}` | Update an existing item | `{"name": "string", "description": "string"}` |
+| `DELETE` | `/employees/{employees_id}` | Delete an item | - |
 
 ## 💡 Usage Examples
 
@@ -181,19 +179,7 @@ To maintain code quality:
 
 ## 🐛 Known Issues
 
-- None at the moment. Please report any issues you encounter!
-
-## 🔮 Future Enhancements
-
-- [ ] Add authentication and authorization (JWT tokens)
-- [ ] Implement pagination for list endpoints
-- [ ] Add filtering and sorting capabilities
-- [ ] Database migrations with Alembic
-- [ ] Comprehensive test suite with pytest
-- [ ] Docker containerization
-- [ ] CI/CD pipeline setup
-- [ ] API rate limiting
-- [ ] Logging and monitoring
+- None at the moment. Please report any issues you encounter
 
 ## 📄 License
 
